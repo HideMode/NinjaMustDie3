@@ -1,16 +1,17 @@
-# 忍者必须死
+# NinJiaMustDie Utils
 
 ## Prerequisite
 
-1. 安装Python3
+1. 安装[Python3.X](https://www.python.org/downloads/)
 
+2. 安装依赖
 ```bash
 pip3 install -r requirement.txt
 ```
 
-## 使用
-```bash
-python3 giftCodeView.py 兑换码名称
+## Usage
+> `uids.txt` 为游戏uid列表，自行更新（一行一id）
 
+```bash
 python3 giftCodeViewThread.py 兑换码名称
 ```
