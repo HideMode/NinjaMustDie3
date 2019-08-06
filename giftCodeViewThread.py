@@ -10,6 +10,7 @@ def job(uids, code):
     """获取指定ip对应的地理位置"""
     flag=True
     for uid in uids:
+        # print(threading.current_thread()) 
         if not flag:
             break
         url='http://statistics.pandadastudio.com/player/giftCode'
