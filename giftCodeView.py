@@ -20,7 +20,7 @@ with open('uids.txt', 'r') as file:
         result=r.json()
         # 417: 礼包不存在 424: 过期
         if result['code'] == 417 or result['code'] == 424:
-            flag=False
+            # flag=False
             print(result['msg'])
-            break
+            # break
    
