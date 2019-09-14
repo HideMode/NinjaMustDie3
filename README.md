@@ -1,4 +1,4 @@
-# NinJiaMustDie Utils
+# NinJaMustDie Utils
 
 ## Prerequisite
 
