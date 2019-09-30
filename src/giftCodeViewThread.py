@@ -46,10 +46,10 @@ def job(uids, code):
             infoRes=infoReq.json()
             if infoRes['msg'] == 'success':
                 print(uid, giftCodeRes['msg'], infoRes['data']['name'])
-                result.append(uid, giftCodeRes['msg'], infoRes['data']['name'])
+                result.append(uid + ' ' + giftCodeRes['msg'] + ' ' + infoRes['data']['name'])
             else:
                 print(uid, giftCodeRes['msg'])
-                result.append(uid, giftCodeRes['msg'])
+                result.append(uid + ' ' + giftCodeRes['msg'])
     return result
 
 # if __name__ == "__main__":
