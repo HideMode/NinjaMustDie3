@@ -52,20 +52,6 @@ def job(uids, code):
                 result.append(uid + ' ' + giftCodeRes['msg'])
     return result
 
-# if __name__ == "__main__":
-#     threads = []
-#     uids=[]
-#     code=sys.argv[1]
-#     print('兑换码=>' + code)
-#     with open('uids.txt', 'r') as f:
-#         uids = f.read().splitlines()
-#     for _uids in chunks(uids, 5):
-#         t = threading.Thread(target=job, args=(_uids, code))
-#         threads.append(t)
-#         t.start()
-
-#     [thread.join() for thread in threads]
-
 def executeJob(code):
     threads = []
     uids=[]
@@ -82,3 +68,9 @@ def executeJob(code):
         reuslt.append(thread.get_result())
     return json.dumps(reuslt, ensure_ascii=False)
     # [thread.join() for thread in threads]
+
+if __name__ == "__main__":
+    threads = []
+    uids=[]
+    code=sys.argv[1]
+    executeJob(code)
