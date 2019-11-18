@@ -13,5 +13,5 @@ pip3 install -r requirement.txt
 > `uids.txt` 为游戏uid列表，自行更新（一行一id）
 
 ```bash
-python3 giftCodeViewThread.py 兑换码名称
+python3 src/giftCodeViewThread.py 兑换码名称
 ```
