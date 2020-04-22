@@ -15,4 +15,13 @@ pip3 install -r requirement.txt
 ```bash
 # 进入项目目录后执行
 python3 src/giftCodeViewThread.py 兑换码名称
+
+
+## 新手礼包
+```
+cat 新手兑换码| while read line
+do
+echo $line
+python3 src/giftCodeViewThread.py $line
+done
 ```
